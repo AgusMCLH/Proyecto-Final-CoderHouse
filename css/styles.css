@@ -95,86 +95,101 @@ body{
 footer{
     background-color: #005ac2;
     width: 100%;
-    height: 200px;
-    border-radius: 10px 10px 0px 0px;
-    overflow: hidden;
+    height: 300px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-
-}
-
-footer .logos{
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    justify-content: center; 
-    gap: 10px;
-}
-
-footer .derechos, footer .redes{
-    width: 377px;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    justify-content: center; 
-}
-
-footer .derechos a{
-    text-decoration: none;
-}
-footer .derechos .acjlink{
-    color: red;
-}
-footer .derechos .coderhouselink{
-    color: black;
-}
-
-footer .derechos{
-    color: rgba(255, 255, 255, 0.798);
-    text-align: center;
-}
-
-.derechos span{
-    font-weight: bolder;
-    color: red;
-    font-size: 20px;
-}
-.redes{
-    gap: 10px;
-}
-.logosocial img{
-    width: 30px;
-    margin-left: 20px;
-}
-
-.redes a{
-    margin-right: 20px;
-    text-decoration: none;
-    color: white;
-    display: flex;
-    flex-direction: row-reverse;
     align-items: center;
 }
 
+.footcontainer{
+    margin: auto;
+    width: 98%;
+    height: 70%;
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 0.1fr;
+    grid-template-areas: "logoacj footercontent"
+    "logoymca footercontent"
+    "copyrights creator" ;
+    
+
+
+}
+
+.creator{
+    grid-area: creator;
+    color:rgba(255, 255, 255, 0.952);
+    display: flex;
+    justify-content: space-around;
+    border-top: #ececec 1px dashed;
+}
+
+.acj{
+    
+    grid-area: logoacj;
+    display: flex;
+    align-items: center;
+}
+.ymca{
+
+    grid-area: logoymca;
+    display: flex;
+    align-items: center;
+}
+.copyrights{
+    grid-area: copyrights;
+    color: rgba(255, 255, 255, 0.952);
+    text-align: center;
+}
+
+.footercontent{
+    display: flex;
+    grid-area: footercontent;
+    color: rgba(255, 255, 255, 0.952);
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 5%;
+    align-items: center;
+   
+}
+
+.footercontent div{
+    text-align: left;
+    height: 100%;
+    width: 10%;
+    
+}
+
+.footercontent div a{
+    background-color:#005bc2ac;
+    color:#fff;
+    text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
 .acj, .ymca{
     display: flex;
-    color: white;
+    color:  rgba(255, 255, 255, 0.952);
 }
 .acj p, .ymca p{
     margin: 5px;
 }
 
-footer .acj img, footer .ymca img{
+.acj img, footer .ymca img{
     height: 65px;
     border-right: 2px solid rgb(0, 49, 105);
 }
-footer .acj img{
+.acj img{
     padding: 0 8px 0 8px;
 }
-footer .ymca img{
+.ymca img{
     padding-right: 5px;
 }
 
@@ -363,14 +378,15 @@ main .gridhome{
 .gridnosotros{
     margin: 40px auto;
     display: grid;
-    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.25fr 0.25fr 1.5fr;
     grid-template-areas: 
-    "vision valores valores"
-    "mision mision mision"
-    "directores directores directores";
+    "vision valores"
+    "mision mision"
+    "directores directores";
     width: 80%;
     height: 900px;
+    margin-bottom: 10px;
 }
 
 .directores{

@@ -4,31 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/bootstrap.min.css">
     <link rel="stylesheet" href="./../css/Styles.css">
     <link rel="shortcut icon" href="./../img/favicon-32x32.png" type="image/x-icon">
     <title>Asociación Cristiana de Jóvenes</title>
 </head>
 <body>
-<header>
-</header>
-<div class="menu_container">
-    <img src="./../img/Logo_ACJ_400x400.png" alt="Logo de la Asociación Cristiana de Jóvenes">
-    <nav class="container">
-        <ul class="menu">
-            <li><a href="./../index.html">Home</a></li>
-            <li><a href="./Nosotros.html">Nosotros</a></li>
-            <li><a href="#">Unidades</a>
-            <ul class="submenu_unidades">
-                <li> <a href="./unidadcentro.html">Unidad Centro</a></li>
-                <li> <a href="./unidadportones.html">Unidad Portones</a></li>
-            </ul></li>
-            <li><a href="./escuelaacj.html">Escuela ACJ</a></li>
-            <li><a href="./campart.html">Camp. Artigas</a></li>
-            <li><a href="./adhu.html">ADHU</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-</div>  
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: #005ac2">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./../index.html"
+              ><img
+                src="./../img/Logo_ACJ_400x400.png"
+                alt="Logo de la Asociación Cristiana de Jóvenes"
+                class="navimage"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./../routes/Nosotros.html"
+                    >Nosotros</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Unidades
+                  </a>
+                  <ul class="dropdown-menu" style="background-color: #005ac2">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./../routes/unidadcentro.html"
+                        >Unidad Centro</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./../routes/unidadportones.html"
+                        >Unidad Portones</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./../routes/escuelaacj.html"
+                    >Escuela ACJ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./../routes/campart.html"
+                    >Campamento Artigas</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./../routes/adhu.html">ADHU</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./../routes/contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
     <main>
         <div class="titulo"><p>Escuela ACJ</p></div>
 
@@ -85,5 +148,6 @@
                 <div class="logosocial whatsapp"><a href="https://wa.me/598093953642/?text=Quisiera%20consultar%20sobre%20los%20precios%20de%20los%20planes"><img src="./../img/newhome/whatsapp.png" alt="Logo de Whatsapp" ><p>+598 93 953 642</p></a></div>
          </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
