@@ -2,10 +2,12 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-size: 16px;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ececec;
+    /* background-color: #363636; */
 
 }
 .menu_container{
@@ -95,9 +97,14 @@ body{
 footer{
     background-color: #005ac2;
     width: 100%;
-    height: 300px;
+    height: auto;
     display: flex;
     align-items: center;
+}
+footer span{
+    color: #ff1e47;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .footcontainer{
@@ -122,10 +129,13 @@ footer{
     display: flex;
     justify-content: space-around;
     border-top: #ececec 1px dashed;
+    border-left: #ececec 1px dashed;
+    height: 50px;
 }
 
+
 .acj{
-    
+    margin-bottom: 20px;
     grid-area: logoacj;
     display: flex;
     align-items: center;
@@ -146,18 +156,25 @@ footer{
     display: flex;
     grid-area: footercontent;
     color: rgba(255, 255, 255, 0.952);
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 5%;
+    gap: 50px;
     align-items: center;
+    justify-content: flex-end;
    
+}
+.footercontent ul{
+    margin: 0px;
+    padding: 0%;
+}
+.footercontent li img{
+    margin-left: 10px;
+    width: 20px;
 }
 
 .footercontent div{
-    text-align: left;
-    height: 100%;
-    width: 10%;
-    
+    height: 1fr;
+    width: 20%;
 }
 
 .footercontent div a{
@@ -165,14 +182,6 @@ footer{
     color:#fff;
     text-decoration:none;
 }
-
-
-
-
-
-
-
-
 
 .acj, .ymca{
     display: flex;
@@ -239,7 +248,7 @@ main .gridhome{
 .horarios{
     grid-area: horarios;
     background-color: #192153;
-    height: 150px;
+    height: auto;
     text-align: center;
     overflow: auto;
     display: block;
@@ -253,6 +262,8 @@ main .gridhome{
     margin-top: auto;
     position: relative;
     top: 15px;
+    left: -15px;
+    flex-wrap: wrap;
 }
 
 .horarios img{
@@ -340,6 +351,13 @@ main .gridhome{
     height: auto;
 
 }
+
+/* Grid */
+
+
+
+
+/* Grid Responsive */
 
 .titulo{
     position: relative;
@@ -589,4 +607,66 @@ input[type="button"] {
 
 .unidadportones .nosotros{
     height: 50vh;
+}
+
+/* responsive */
+
+@media screen and (max-width:992px) {
+    .creator{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border-left:none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    main .gridhome{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "plan plan"
+        "horarios horarios"
+        "unite unite"
+        "iuacj iuacj"
+        "trabaja fundacion"
+        "aporte fundacion";
+    }
+
+    .footcontainer{
+        margin: auto;
+        width: 98%;
+        height: 70%;
+        display: grid;
+        
+        grid-template-columns: 1fr ;
+        grid-template-rows: 0.7fr 0.7fr 2fr 0.1fr 0.1fr;
+        grid-template-areas: "logoacj"
+        "logoymca"
+        "footercontent"
+        "copyrights "
+        "creator" ;
+
+    }
+    .footercontent{
+        margin-top: 20px;
+        display: block;
+        grid-area: footercontent;
+        color: rgba(255, 255, 255, 0.952);
+        text-align: center;
+    }
+    .footercontent div{
+        height: auto;
+        width: auto;
+    }
+    
+    .acj{
+        margin-bottom: 0px;
+
+    }
 }
