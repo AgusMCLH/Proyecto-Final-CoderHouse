@@ -380,6 +380,9 @@ main .gridhome{
     height: 80px;
     background-color: rgb(152,188,17);
 }
+
+
+
 .tituloartigas p{
     position: relative;
     top: 20px;
@@ -575,25 +578,23 @@ input[type="button"] {
 
 /* ESCUELA */
 
-.escuela .nosotros div span{
+.escuela .row div span{
     color: #005ac2;
 }
 
-.escuela .nosotros{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  
+.escuela div{
+    border-right:1px rgb(0, 49, 105) solid;
+    border-bottom: 1px solid rgb(0, 49, 105);
+    min-height: 300px;
 }
 
-.escuela .nosotros div{
-    width: 48%;
-    display: inline;
-    padding: 2%;
+.escuela .row div h3{
+    margin-top: 30px;
+    color: #192153;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
-.escuela .nosotros{
-    margin-bottom: 80px;
-}
+
 
 /* UNIDAD CENTRO */
 
