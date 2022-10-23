@@ -499,6 +499,9 @@ main .gridhome .iuacj {
   .telefonos .row div {
     max-width: 43%;
   }
+  .nosotros .nosotroscontainer .vision {
+    border-right: none;
+  }
   .escuela .row .compa {
     border-right: none;
   }

@@ -17,6 +17,14 @@
 
         max-width: 43%;
     }
+// .nosotros .nosotroscontainer .vision
+    .nosotros{
+        .nosotroscontainer{
+            .vision{
+                border-right: none;
+            }
+        }
+    }
 
     .escuela{
         .row{
