@@ -164,7 +164,7 @@ footer .footcontainer .ymca img {
   height: 80px;
   background-color: #005ac2;
 }
-.titulo p {
+.titulo h1 {
   position: relative;
   top: 20px;
   right: -30px;
@@ -183,7 +183,7 @@ footer .footcontainer .ymca img {
   height: 80px;
   background-color: rgb(152, 188, 17);
 }
-.tituloartigas p {
+.tituloartigas h1 {
   position: relative;
   top: 20px;
   right: -30px;
@@ -311,7 +311,7 @@ main .gridhome .iuacj {
   width: 90%;
   margin: 0%;
 }
-.nosotros h3 {
+.nosotros h2 {
   margin-top: 30px;
   color: #192153;
   font-size: 30px;
@@ -450,7 +450,7 @@ main .gridhome .iuacj {
   border-bottom: 1px solid rgb(0, 49, 105);
   min-height: 300px;
 }
-.escuela .row div h3 {
+.escuela .row div h2 {
   margin-top: 30px;
   color: #192153;
   font-size: 30px;
